@@ -1,0 +1,327 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CD02AC70-4BF7-467F-B033-C5154E7E3E8C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PUB_ZIK</RootNamespace>
+    <AssemblyName>PUB-ZIK</AssemblyName>
+    <ManifestCertificateThumbprint>F12DA7F057571FE62D92BB576CFF84B072CD69A8</ManifestCertificateThumbprint>
+    <ManifestKeyFile>PUB-ZIK_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>false</SignManifests>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <StartupObject>PUB_ZIK.Program</StartupObject>
+    <PublishUrl>\\Server1\lakas\pubzik\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://ntics.uzhgorod.ua/pubzik/</InstallUrl>
+    <UpdateUrl>http://ntics.uzhgorod.ua/pubzik/</UpdateUrl>
+    <SupportUrl>http://ntics.uzhgorod.ua/pubzik</SupportUrl>
+    <ProductName>NTICS</ProductName>
+    <PublisherName>NTICS</PublisherName>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>index.htm</WebPage>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <ApplicationVersion>1.0.0.23</ApplicationVersion>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base.cs">
+      <DependentUpon>Base.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Base.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Base.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conf.cs" />
+    <Compile Include="Frames\CommonControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Frames\CommonControl.Designer.cs">
+      <DependentUpon>CommonControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonVariables.cs">
+    </Compile>
+    <Compile Include="Frames\Connection.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Frames\Connection.Designer.cs">
+      <DependentUpon>Connection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enums.cs" />
+    <Compile Include="Frames\PlaiseWait.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Frames\PlaiseWait.Designer.cs">
+      <DependentUpon>PlaiseWait.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frames\LogBrowser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Frames\LogBrowser.Designer.cs">
+      <DependentUpon>LogBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListBoxTraceListener.cs" />
+    <Compile Include="NalogFOP.cs" />
+    <Compile Include="PeriodFOP.cs" />
+    <Compile Include="Forms\main_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\main_frm.Designer.cs">
+      <DependentUpon>main_frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Frames\CommonControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CommonControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frames\Connection.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Connection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frames\PlaiseWait.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PlaiseWait.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frames\LogBrowser.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LogBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\main_frm.resx">
+      <DependentUpon>main_frm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frames\SinchroReferences.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SinchroReferences.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frames\TransferOperation.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TransferOperation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frames\Welkome.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Welkome.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="MEMReferences.cs" />
+    <Compile Include="PUBReferences.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PUBReferences.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="serial.cs" />
+    <Compile Include="Frames\SinchroReferences.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Frames\SinchroReferences.Designer.cs">
+      <DependentUpon>SinchroReferences.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SotrFOP.cs" />
+    <Compile Include="Frames\TransferOperation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Frames\TransferOperation.Designer.cs">
+      <DependentUpon>TransferOperation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frames\Welkome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Frames\Welkome.Designer.cs">
+      <DependentUpon>Welkome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="НалогиНаФОП.cs" />
+    <Compile Include="НалогНаФОП.cs" />
+    <Compile Include="Проводка.cs" />
+    <Compile Include="Проводки.cs">
+    </Compile>
+    <Compile Include="Распределения.cs">
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PUBReferences.xsc">
+      <DependentUpon>PUBReferences.xsd</DependentUpon>
+    </None>
+    <None Include="PUBReferences.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PUBReferences.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="PUBReferences.xss">
+      <DependentUpon>PUBReferences.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="From 1C.txt">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-back_24.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-forward_24.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help_Button.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ntics software.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tips.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ipp_0004.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ipp_0003.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\con-green.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\con-red.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bluprev.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blunext.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warning.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\get_conn.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t_03_01a_01_E.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\connected.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Animation.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HelpCenter.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\applications_24.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Base.xsc">
+      <DependentUpon>Base.xsd</DependentUpon>
+    </None>
+    <None Include="Base.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Base.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Base.xss">
+      <DependentUpon>Base.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\applications_241.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="From 1C.txt" />
+    <Content Include="Recode Podr-Dey.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ntics_lib\ntics_lib.csproj">
+      <Project>{B8731A53-421C-4EFC-B499-57617A4CED85}</Project>
+      <Name>ntics_lib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{B4F97281-0DBD-4835-9ED8-7DFB966E87FF}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

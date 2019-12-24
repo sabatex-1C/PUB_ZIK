@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Base" targetNamespace="http://tempuri.org/Base.xsd" xmlns:mstns="http://tempuri.org/Base.xsd" xmlns="http://tempuri.org/Base.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Base" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="Base" msprop:Generator_DataSetName="Base">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Сотрудники" msprop:Generator_UserTableName="Сотрудники" msprop:Generator_RowDeletedName="СотрудникиRowDeleted" msprop:Generator_TableClassName="СотрудникиDataTable" msprop:Generator_RowChangedName="СотрудникиRowChanged" msprop:Generator_RowClassName="СотрудникиRow" msprop:Generator_RowChangingName="СотрудникиRowChanging" msprop:Generator_RowEvArgName="СотрудникиRowChangeEvent" msprop:Generator_RowEvHandlerName="СотрудникиRowChangeEventHandler" msprop:Generator_TablePropName="Сотрудники" msprop:Generator_TableVarName="tableСотрудники" msprop:Generator_RowDeletingName="СотрудникиRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInTable="IDColumn" type="xs:int" />
+              <xs:element name="ИНН" msprop:Generator_UserColumnName="ИНН" msprop:Generator_ColumnPropNameInRow="ИНН" msprop:Generator_ColumnVarNameInTable="columnИНН" msprop:Generator_ColumnPropNameInTable="ИННColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ФИО" msprop:Generator_UserColumnName="ФИО" msprop:Generator_ColumnPropNameInRow="ФИО" msprop:Generator_ColumnVarNameInTable="columnФИО" msprop:Generator_ColumnPropNameInTable="ФИОColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="КОД" msprop:Generator_UserColumnName="КОД" msprop:Generator_ColumnPropNameInRow="КОД" msprop:Generator_ColumnVarNameInTable="columnКОД" msprop:Generator_ColumnPropNameInTable="КОДColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Расчет" msprop:Generator_UserTableName="Расчет" msprop:Generator_RowDeletedName="РасчетRowDeleted" msprop:Generator_TableClassName="РасчетDataTable" msprop:Generator_RowChangedName="РасчетRowChanged" msprop:Generator_RowClassName="РасчетRow" msprop:Generator_RowChangingName="РасчетRowChanging" msprop:Generator_RowEvArgName="РасчетRowChangeEvent" msprop:Generator_RowEvHandlerName="РасчетRowChangeEventHandler" msprop:Generator_TablePropName="Расчет" msprop:Generator_TableVarName="tableРасчет" msprop:Generator_RowDeletingName="РасчетRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInTable="IDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Код" msprop:Generator_UserColumnName="Код" msprop:Generator_ColumnPropNameInRow="Код" msprop:Generator_ColumnVarNameInTable="columnКод" msprop:Generator_ColumnPropNameInTable="КодColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Наименование" msprop:Generator_UserColumnName="Наименование" msprop:Generator_ColumnPropNameInRow="Наименование" msprop:Generator_ColumnVarNameInTable="columnНаименование" msprop:Generator_ColumnPropNameInTable="НаименованиеColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ПериодРегистрации" msprop:Generator_UserColumnName="ПериодРегистрации" msprop:Generator_ColumnPropNameInRow="ПериодРегистрации" msprop:Generator_ColumnVarNameInTable="columnПериодРегистрации" msprop:Generator_ColumnPropNameInTable="ПериодРегистрацииColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ДатаНачала" msprop:Generator_UserColumnName="ДатаНачала" msprop:Generator_ColumnPropNameInRow="ДатаНачала" msprop:Generator_ColumnVarNameInTable="columnДатаНачала" msprop:Generator_ColumnPropNameInTable="ДатаНачалаColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ДатаОкончания" msprop:Generator_UserColumnName="ДатаОкончания" msprop:Generator_ColumnPropNameInRow="ДатаОкончания" msprop:Generator_ColumnVarNameInTable="columnДатаОкончания" msprop:Generator_ColumnPropNameInTable="ДатаОкончанияColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Сотрудник" msprop:Generator_UserColumnName="Сотрудник" msprop:Generator_ColumnPropNameInRow="Сотрудник" msprop:Generator_ColumnVarNameInTable="columnСотрудник" msprop:Generator_ColumnPropNameInTable="СотрудникColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Результат" msprop:Generator_UserColumnName="Результат" msprop:Generator_ColumnPropNameInRow="Результат" msprop:Generator_ColumnVarNameInTable="columnРезультат" msprop:Generator_ColumnPropNameInTable="РезультатColumn" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="НалогНаФОП" msprop:Generator_UserTableName="НалогНаФОП" msprop:Generator_RowDeletedName="НалогНаФОПRowDeleted" msprop:Generator_TableClassName="НалогНаФОПDataTable" msprop:Generator_RowChangedName="НалогНаФОПRowChanged" msprop:Generator_RowClassName="НалогНаФОПRow" msprop:Generator_RowChangingName="НалогНаФОПRowChanging" msprop:Generator_RowEvArgName="НалогНаФОПRowChangeEvent" msprop:Generator_RowEvHandlerName="НалогНаФОПRowChangeEventHandler" msprop:Generator_TablePropName="НалогНаФОП" msprop:Generator_TableVarName="tableНалогНаФОП" msprop:Generator_RowDeletingName="НалогНаФОПRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInTable="IDColumn" type="xs:int" />
+              <xs:element name="КОД" msprop:Generator_UserColumnName="КОД" msprop:Generator_ColumnPropNameInRow="КОД" msprop:Generator_ColumnVarNameInTable="columnКОД" msprop:Generator_ColumnPropNameInTable="КОДColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Наименование" msprop:Generator_UserColumnName="Наименование" msprop:Generator_ColumnPropNameInRow="Наименование" msprop:Generator_ColumnVarNameInTable="columnНаименование" msprop:Generator_ColumnPropNameInTable="НаименованиеColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ПериодическийЧисло" msprop:Generator_UserTableName="ПериодическийЧисло" msprop:Generator_RowDeletedName="ПериодическийЧислоRowDeleted" msprop:Generator_TableClassName="ПериодическийЧислоDataTable" msprop:Generator_RowChangedName="ПериодическийЧислоRowChanged" msprop:Generator_RowClassName="ПериодическийЧислоRow" msprop:Generator_RowChangingName="ПериодическийЧислоRowChanging" msprop:Generator_RowEvArgName="ПериодическийЧислоRowChangeEvent" msprop:Generator_RowEvHandlerName="ПериодическийЧислоRowChangeEventHandler" msprop:Generator_TablePropName="ПериодическийЧисло" msprop:Generator_TableVarName="tableПериодическийЧисло" msprop:Generator_RowDeletingName="ПериодическийЧислоRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInTable="IDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Дата" msprop:Generator_UserColumnName="Дата" msprop:Generator_ColumnPropNameInRow="Дата" msprop:Generator_ColumnVarNameInTable="columnДата" msprop:Generator_ColumnPropNameInTable="ДатаColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Значение" msprop:Generator_UserColumnName="Значение" msprop:Generator_ColumnPropNameInRow="Значение" msprop:Generator_ColumnVarNameInTable="columnЗначение" msprop:Generator_ColumnPropNameInTable="ЗначениеColumn" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="НалогФОП" msprop:Generator_UserTableName="НалогФОП" msprop:Generator_RowDeletedName="НалогФОПRowDeleted" msprop:Generator_TableClassName="НалогФОПDataTable" msprop:Generator_RowChangedName="НалогФОПRowChanged" msprop:Generator_RowClassName="НалогФОПRow" msprop:Generator_RowChangingName="НалогФОПRowChanging" msprop:Generator_RowEvArgName="НалогФОПRowChangeEvent" msprop:Generator_RowEvHandlerName="НалогФОПRowChangeEventHandler" msprop:Generator_TablePropName="НалогФОП" msprop:Generator_TableVarName="tableНалогФОП" msprop:Generator_RowDeletingName="НалогФОПRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInTable="IDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Сотрудник" msprop:Generator_UserColumnName="Сотрудник" msprop:Generator_ColumnPropNameInRow="Сотрудник" msprop:Generator_ColumnVarNameInTable="columnСотрудник" msprop:Generator_ColumnPropNameInTable="СотрудникColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ПериодРегистрации" msprop:Generator_UserColumnName="ПериодРегистрации" msprop:Generator_ColumnPropNameInRow="ПериодРегистрации" msprop:Generator_ColumnVarNameInTable="columnПериодРегистрации" msprop:Generator_ColumnPropNameInTable="ПериодРегистрацииColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="НалогНаФОП" msprop:Generator_UserColumnName="НалогНаФОП" msprop:Generator_ColumnPropNameInRow="НалогНаФОП" msprop:Generator_ColumnVarNameInTable="columnНалогНаФОП" msprop:Generator_ColumnPropNameInTable="НалогНаФОПColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ПериодДействия" msprop:Generator_UserTableName="ПериодДействия" msprop:Generator_RowDeletedName="ПериодДействияRowDeleted" msprop:Generator_TableClassName="ПериодДействияDataTable" msprop:Generator_RowChangedName="ПериодДействияRowChanged" msprop:Generator_RowClassName="ПериодДействияRow" msprop:Generator_RowChangingName="ПериодДействияRowChanging" msprop:Generator_RowEvArgName="ПериодДействияRowChangeEvent" msprop:Generator_RowEvHandlerName="ПериодДействияRowChangeEventHandler" msprop:Generator_TablePropName="ПериодДействия" msprop:Generator_TableVarName="tableПериодДействия" msprop:Generator_RowDeletingName="ПериодДействияRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInTable="IDColumn" type="xs:int" />
+              <xs:element name="НалогФОП" msprop:Generator_UserColumnName="НалогФОП" msprop:Generator_ColumnPropNameInRow="НалогФОП" msprop:Generator_ColumnVarNameInTable="columnНалогФОП" msprop:Generator_ColumnPropNameInTable="НалогФОПColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ДатаПериода" msprop:Generator_UserColumnName="ДатаПериода" msprop:Generator_ColumnPropNameInRow="ДатаПериода" msprop:Generator_ColumnVarNameInTable="columnДатаПериода" msprop:Generator_ColumnPropNameInTable="ДатаПериодаColumn" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Подразделение" msprop:Generator_UserTableName="Подразделение" msprop:Generator_RowDeletedName="ПодразделениеRowDeleted" msprop:Generator_TableClassName="ПодразделениеDataTable" msprop:Generator_RowChangedName="ПодразделениеRowChanged" msprop:Generator_RowClassName="ПодразделениеRow" msprop:Generator_RowChangingName="ПодразделениеRowChanging" msprop:Generator_RowEvArgName="ПодразделениеRowChangeEvent" msprop:Generator_RowEvHandlerName="ПодразделениеRowChangeEventHandler" msprop:Generator_TablePropName="Подразделение" msprop:Generator_TableVarName="tableПодразделение" msprop:Generator_RowDeletingName="ПодразделениеRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInTable="IDColumn" type="xs:int" />
+              <xs:element name="ПериодДействия" msprop:Generator_UserColumnName="ПериодДействия" msprop:Generator_ColumnPropNameInRow="ПериодДействия" msprop:Generator_ColumnVarNameInTable="columnПериодДействия" msprop:Generator_ColumnPropNameInTable="ПериодДействияColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="КОД" msprop:Generator_UserColumnName="КОД" msprop:Generator_ColumnPropNameInRow="КОД" msprop:Generator_ColumnVarNameInTable="columnКОД" msprop:Generator_ColumnPropNameInTable="КОДColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Субпериод" msprop:Generator_UserTableName="Субпериод" msprop:Generator_RowDeletedName="СубпериодRowDeleted" msprop:Generator_TableClassName="СубпериодDataTable" msprop:Generator_RowChangedName="СубпериодRowChanged" msprop:Generator_RowClassName="СубпериодRow" msprop:Generator_RowChangingName="СубпериодRowChanging" msprop:Generator_RowEvArgName="СубпериодRowChangeEvent" msprop:Generator_RowEvHandlerName="СубпериодRowChangeEventHandler" msprop:Generator_TablePropName="Субпериод" msprop:Generator_TableVarName="tableСубпериод" msprop:Generator_RowDeletingName="СубпериодRowDeleting">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1">
+      <xs:selector xpath=".//mstns:Сотрудники" />
+      <xs:field xpath="mstns:ИНН" />
+    </xs:unique>
+    <xs:unique name="Constraint2" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Сотрудники" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+    <xs:unique name="НалогНаФОП_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:НалогНаФОП" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+    <xs:unique name="ПериодическийЧислоKey1">
+      <xs:selector xpath=".//mstns:ПериодическийЧисло" />
+      <xs:field xpath="mstns:ID" />
+      <xs:field xpath="mstns:Дата" />
+    </xs:unique>
+    <xs:unique name="ПериодДействия_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ПериодДействия" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+    <xs:unique name="Подразделение_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Подразделение" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="Расчет_Сотрудники" msdata:parent="Расчет" msdata:child="Сотрудники" msdata:parentkey="Сотрудник" msdata:childkey="ID" msprop:Generator_UserRelationName="Расчет_Сотрудники" msprop:Generator_RelationVarName="relationРасчет_Сотрудники" msprop:Generator_UserChildTable="Сотрудники" msprop:Generator_UserParentTable="Расчет" msprop:Generator_ParentPropName="РасчетRow" msprop:Generator_ChildPropName="GetСотрудникиRows" />
+      <msdata:Relationship name="НалогФОП_Сотрудники" msdata:parent="НалогФОП" msdata:child="Сотрудники" msdata:parentkey="Сотрудник" msdata:childkey="ID" msprop:Generator_UserRelationName="НалогФОП_Сотрудники" msprop:Generator_RelationVarName="relationНалогФОП_Сотрудники" msprop:Generator_UserChildTable="Сотрудники" msprop:Generator_UserParentTable="НалогФОП" msprop:Generator_ParentPropName="НалогФОПRow" msprop:Generator_ChildPropName="GetСотрудникиRows" />
+      <msdata:Relationship name="НалогФОП_НалогНаФОП" msdata:parent="НалогФОП" msdata:child="НалогНаФОП" msdata:parentkey="НалогНаФОП" msdata:childkey="ID" msprop:Generator_UserRelationName="НалогФОП_НалогНаФОП" msprop:Generator_RelationVarName="relationНалогФОП_НалогНаФОП" msprop:Generator_UserChildTable="НалогНаФОП" msprop:Generator_UserParentTable="НалогФОП" msprop:Generator_ParentPropName="НалогФОПRow" msprop:Generator_ChildPropName="GetНалогНаФОПRows" />
+      <msdata:Relationship name="ПериодДействия_НалогФОП" msdata:parent="ПериодДействия" msdata:child="НалогФОП" msdata:parentkey="НалогФОП" msdata:childkey="ID" msprop:Generator_UserRelationName="ПериодДействия_НалогФОП" msprop:Generator_RelationVarName="relationПериодДействия_НалогФОП" msprop:Generator_UserChildTable="НалогФОП" msprop:Generator_UserParentTable="ПериодДействия" msprop:Generator_ParentPropName="ПериодДействияRow" msprop:Generator_ChildPropName="GetНалогФОПRows" />
+      <msdata:Relationship name="Подразделение_ПериодДействия" msdata:parent="Подразделение" msdata:child="ПериодДействия" msdata:parentkey="ПериодДействия" msdata:childkey="ID" msprop:Generator_UserRelationName="Подразделение_ПериодДействия" msprop:Generator_RelationVarName="relationПодразделение_ПериодДействия" msprop:Generator_UserChildTable="ПериодДействия" msprop:Generator_UserParentTable="Подразделение" msprop:Generator_ParentPropName="ПодразделениеRow" msprop:Generator_ChildPropName="GetПериодДействияRows" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

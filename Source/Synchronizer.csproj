@@ -68,10 +68,6 @@
   <ItemGroup>
     <Reference Include="Accessibility" />
     <Reference Include="Microsoft.VisualBasic" />
-    <Reference Include="ntics_lib, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>dlls\Debug\ntics_lib.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -322,19 +318,17 @@
     <None Include="Resources\applications_241.gif" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="dlls\Debug\ntics_lib.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="dlls\Debug\ntics_lib.pdb">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="dlls\Release\ntics_lib.dll" />
-    <Content Include="dlls\Release\ntics_lib.pdb" />
     <Content Include="From 1C.txt" />
     <Content Include="Recode Podr-Dey.txt" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{B4F97281-0DBD-4835-9ED8-7DFB966E87FF}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ntics_lib\ntics_lib.csproj">
+      <Project>{b8731a53-421c-4efc-b499-57617a4ced85}</Project>
+      <Name>ntics_lib</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

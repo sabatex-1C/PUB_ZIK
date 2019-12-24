@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ntics_lib.dll" size="106496">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ntics_lib.dll" size="99840">
       <assemblyIdentity name="ntics_lib" version="1.1.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>2vUXa+6J6P1KViFZWjHuCc8Vk8Q=</dsig:DigestValue>
+        <dsig:DigestValue>dL6s0gEFjvK1ljudYHUj3SOJcT4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -61,7 +61,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>IZBblgSHaEDCTb28PoRfDrXCcto=</dsig:DigestValue>
+        <dsig:DigestValue>QhpVwSIK4aLb1CZCSYsnpjoHIBo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -2,4 +2,6 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/Source/.vs/Synchronizer/v16
+/Source/.vs
+/Source/obj
+/.vs

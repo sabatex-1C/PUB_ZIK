@@ -5,3 +5,6 @@
 /Source/.vs
 /Source/obj
 /.vs
+/ntics_lib/bin/Debug
+/ntics_lib/obj/Debug
+/Source/bin/Debug
